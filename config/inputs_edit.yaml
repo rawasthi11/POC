@@ -1,1 +1,5 @@
-production: true
+app_name: "My Application"
+version: 1.2.3
+production: false
+max_connections: 1000
+pi_value: 3.14159
