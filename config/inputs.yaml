@@ -1,71 +1,9 @@
-# Sample YAML Configuration File
-# Comments start with a hash symbol
-
-# Basic key-value pairs
-app_name: "My Application"
-version: 1.2.3
-production: false
-max_connections: 1000
-pi_value: 3.14159
-
-# Strings can be written without quotes
-description: A sample YAML configuration
-
-# Multi-line strings
-welcome_message: |
-  Welcome to our application!
-  This is a multi-line string.
-  The "|" preserves newlines.
-
-# Sequences (arrays)
-features:
-  - login
-  - dashboard
-  - reports
-  - analytics
-
-# Nested structures
-database:
-  host: db.example.com
-  port: 5432
-  credentials:
-    username: admin
-    password: "s3cr3t!"  # Special characters need quotes
-  tables:
-    - users
-    - products
-    - orders
-
-# Dictionary/map
-environment_variables:
-  PATH: "/usr/bin:/usr/local/bin"
-  HOME: "/home/user"
-
-# Anchors and aliases (for reusing content)
-defaults: &defaults
-  timeout: 30
-  retries: 3
-
-service_one:
-  <<: *defaults
-  endpoint: "/api/v1"
-
-service_two:
-  <<: *defaults
-  endpoint: "/api/v2"
-  timeout: 60  # Overrides the anchored value
-
-# Complex data types
-colors:
-  - name: red
-    hex: "#FF0000"
-    rgb: [255, 0, 0]
-  - name: green
-    hex: "#00FF00"
-    rgb: [0, 255, 0]
-  - name: blue
-    hex: "#0000FF"
-    rgb: [0, 0, 255]
-
-# Null values
-optional_setting: null
+[
+  {
+    "app_name": "My Application",
+    "version": "1.2.3",
+    "production": false,
+    "max_connections": 1000,
+    "pi_value": 3.14159
+  }
+]
