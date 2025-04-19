@@ -1,9 +1,7 @@
-name: Hello World
+name: Hello World Manual
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   say-hello:
